@@ -1,0 +1,118 @@
+.parent-container{
+    display: grid;
+    grid-template-rows: auto 1000px auto;
+    grid-template-columns: 200px auto;
+    grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer"
+    ;
+    background-color: rgb(170, 199, 199);
+    font-family: "Trebuchet MS", "Arial", sans-serif;
+}
+
+
+.header{
+    grid-area: header;
+    color: white;
+    border: 2px solid darkblue;
+    background-color: rgb(82, 145, 188);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    justify-content: flex-start;
+    color: white;
+    border: 2px solid darkblue;
+    background-color: rgb(82, 145, 188);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    .sidebar-inside{
+        line-height: 3;
+    }
+}
+
+.main-content{
+    grid-area: main;
+}
+
+.summary-box{
+    color: #101011;
+    background-color: #e6f6ff;
+    text-align: center;
+    text-align: left;
+}
+
+.skills-box{
+    color: #101011;
+    background-color: #e6f6ff;
+    text-align: center;
+    text-align: left;
+}
+
+.experience-box{
+    color: #101011;
+    background-color: #e6f6ff;
+    text-align: center;
+    text-align: left;
+}
+
+.education-box{
+    color: #101011;
+    background-color: #e6f6ff;
+    text-align: center;
+    text-align: left;
+}
+
+.employment-box{
+    color: #101011;
+    background-color: #e6f6ff;
+    text-align: center;
+    text-align: left;
+}
+
+.footer{
+    grid-area: footer;
+    color: white;
+    border: 2px solid darkblue;
+    background-color: rgb(82, 145, 188);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.absolute-child{
+    position: absolute;
+    top: 650px;
+    left: 60px;
+}
+
+.download{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue; 
+    background-color: rgb(146, 188, 198);
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.15);
+    border: 2px solid black;
+
+}
+
+.download:hover{
+    background-color: rgb(4, 210, 247);
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.25);
+}
